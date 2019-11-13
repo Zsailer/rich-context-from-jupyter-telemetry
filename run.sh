@@ -1,0 +1,1 @@
+jupyter lab --config="config/notebook_config.py"
