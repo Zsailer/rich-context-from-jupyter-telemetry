@@ -1,8 +1,8 @@
 import logging
 
 # Define log files
-contents_log = 'logs/contents.log'
-kernels_log = 'logs/kernels.log'
+contents_log = '../../logs/contents.log'
+kernels_log = '../../logs/kernels.log'
 
 # Define schemas list.
 contents_schemas = [
@@ -14,13 +14,13 @@ kernels_schemas = [
 ]
 
 # Define Handlers
-contents_handlers = logging.FileHandler(contents_log)
-kernels_handlers = logging.FileHandler(kernels_log)
+contents_handler = logging.FileHandler(contents_log)
+kernels_handler = logging.FileHandler(kernels_log)
 
 # Configure the server eventlog to watch for the above events.
 c.EventLog.handlers = [
-    contents_handlers,
-    kernels_handlers
+    contents_handler,
+    kernels_handler
 ]
 
 c.EventLog.allowed_schemas = contents_schemas + kernels_schemas
