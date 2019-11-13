@@ -1,4 +1,6 @@
 users/*
+jupyterhub.sqlite
+jupyterhub_cookie_secret
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
