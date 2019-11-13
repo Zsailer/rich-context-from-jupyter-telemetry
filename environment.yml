@@ -74,4 +74,4 @@ dependencies:
     - zipp==0.6.0
     - git+https://github.com/Zsailer/jupyterhub.git@demo-telemetry
     - git+https://github.com/Zsailer/notebook.git@demo-telemetry
-    - git+https://github.com/Zsailer/telemetry.git@demo-telemetry
+    - git+https://github.com/Zsailer/telemetry.git@demo-telemetrys

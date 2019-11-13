@@ -1,1 +1,2 @@
-jupyter lab --config="config/notebook_config.py"
+jupyterhub --config="config/jupyterhub-server.py"
+
