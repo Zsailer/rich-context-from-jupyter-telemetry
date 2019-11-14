@@ -2,7 +2,7 @@ import logging
 
 # Define log files
 all_events_log = 'logs/all-events.log'
-hub_log = 'logs/hub.log'
+# hub_log = 'logs/hub.log'
 
 # Define schema lists
 hub_schemas = [
@@ -11,12 +11,12 @@ hub_schemas = [
 
 # Define Handlers
 all_events_handler = logging.FileHandler(all_events_log)
-hub_events_handler = logging.FileHandler(hub_log)
+# hub_events_handler = logging.FileHandler(hub_log)
 
 # Configure the JupyterHub Server Eventlog.
 c.EventLog.handlers = [
     all_events_handler,
-    hub_events_handler
+    # hub_events_handler
 ]
 c.EventLog.allowed_schemas = hub_schemas
 
